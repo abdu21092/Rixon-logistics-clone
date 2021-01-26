@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rixon logistics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="d-flex justify-content-between align-items-center">
+        <div class="left">
+            <a href="#"><img class="h-75"
+                    src="data:image/jpeg;base64,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"
+                    alt="#"></a>
+        </div>
+        <div class="right">
+
+            <ul class="d-flex justify-content-around">
+                <li class="d-sm-block d-md-none"><a href="#"><i class="fas fa-bars"></i></a></li>
+                <li><a href="#">About us </a><i class="fas fa-caret-down"></i></li>
+                <li><a href="services.html">Services </a><i class="fas fa-caret-down"></i></li>
+                <li><a href="#">Distribution Network</a></li>
+                <li><a href="#">Our Clients</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><button>Menu <i class="fas fa-caret-down"></i></button></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="scripts">
+            <h4 class=" text-white ">
+                With us, you can <br>
+                Deliver Efficiently <br>
+                & Safely
+            </h4>
+            <p class="text-white">Our tracking technology allows you to track a deliver and know that it made it to its
+                destination on-time.</p>
+            <button class="know">Know More</button>
+        </div>
+    </div>
+    <div class="what">
+        <h3 class="text-capitalize text-center ">What we do</h3>
+        <div class="topgrid">
+            <div class="picscript">
+                <img class="" src="https://www.olympicimpex.com/images/img10.jpg" alt="">
+                <p>Retail Logistics</p>
+            </div>
+            <div class="picscript">
+                <img src="https://www.mccourier.com/wp-content/uploads/2020/11/BMR-4-31.jpg" alt="">
+                <p>Financial Logistics</p>
+            </div>
+            <div class="picscript">
+                <img src="https://saltoperations.com/wp-content/uploads/2020/10/illustation-DOOR-TO-DOORsalt.png"
+                    alt="">
+                <p>Door To Door Logistics</p>
+            </div>
+            <div class="picscript">
+                <img src="https://priorityairexpressltd.co.ke/wp-content/uploads/2019/09/maxresdefault.jpg" alt="">
+                <p>Contract Logistics</p>
+            </div>
+            <div class="picscript">
+                <img src="https://www.talentcons.com/wp-content/uploads/2017/08/IT_Service.jpg" alt="">
+                <p>IT Solutions</p>
+            </div>
+        </div>
+    </div>
+    <div class="our">
+        <h3 class="text-capitalize text-center ">Our Strong Network</h3>
+        <div class="upper d-flex">
+            <div class="img img1">
+                <p>Retail Banks</p>
+            </div>
+            <div class="img img2">
+                <p>Schools</p>
+            </div>
+            <div class="img img3">
+                <p>Residential Areas</p>
+            </div>
+
+        </div>
+        <div class="lower d-flex">
+            <div class="img img4">
+                <p>Offices</p>
+            </div>
+            <div class="img img5">
+                <p>Supermarkets</p>
+            </div>
+            <div class="img img6">
+                <p>Retail Chain Stores</p>
+            </div>
+            <img class="track" src="https://www.rtl.sg/wp-content/uploads/2016/11/lorry.png" alt="">
+        </div>
+    </div>
+    <footer>
+        <div class="footer d-flex">
+            <div class="column1">
+                <div class="footer about">
+                    <h5><a href="#">About us</a></h5>
+                    <br>
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Mission and vision</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Fleet and Warehouse</a></li>
+                    </ul>
+                </div>
+                <div class="footer services">
+                    <h5><a href="#">Services</a></h5>
+                    <br>
+                    <ul>
+                        <li><a href="#">Retail Logistics</a></li>
+                        <li><a href="#">Financial Logistics</a></li>
+                        <li><a href="#">Door to Door logistics</a></li>
+                        <li><a href="#">Contract logistics</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column2 distribution">
+                <h5><a href="#">Distribution Network</a></h5>
+                <br>
+                <ul>
+                    <li><a href="#">Retail Banks</a></li>
+                    <li><a href="#">Schools</a></li>
+                    <li><a href="#">Residential areas</a></li>
+                    <li><a href="#">Offices</a></li>
+                    <li><a href="#">Supermarkets</a></li>
+                    <li><a href="#">Retail Chain Stores</a></li>
+                </ul>
+            </div>
+            <div class="column3">
+                <div class="order">
+                    <h5><a href="#">Order Tracking</a></h5>
+                </div>
+                <br>
+                <div class="clients">
+                    <h5><a href="#">Our Clients</a></h5>
+                </div>
+                <br>
+                <div class="Contact">
+                    <h5><a href="#">Contact Us</a></h5>
+                </div>
+            </div>
+            <div class="column4 rixon">
+                <h5><a href="#">Rixon Logistics</a></h5>
+                <br>
+                <ul>
+                    <li>5th Floor, Gee Luang Chang Industrial Building</li>
+                    <li>It Yuk Yet Street, To Kwa Wan, Kowloon</li>
+                    <li>Hong Kong</li>
+                    <li>Tel: (852) 2389-3238</li>
+                    <li>Fax: (852) 2389-3238</li>
+                    <li>Email: Info@kdkdkkdkdk</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+        <div class="footerbottom">
+            <div class="left hr">
+                <p>Copyright * 2021 Rixon Logistics Ltd.</p>
+            </div>
+            <div class="right hr ">
+                <b>Privacy Policy</b>
+                <b>Terms and Conditions</b>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

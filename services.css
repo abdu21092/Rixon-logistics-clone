@@ -1,0 +1,91 @@
+nav {
+  height: 8rem;
+}
+
+nav .left:hover {
+  transform: scale(1.2);
+}
+
+li {
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+.footer h5 a,
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.right ul li:hover {
+  transform: matrix(1.2, 0, 0, 1.3, 0, 0);
+  background-color: cyan;
+  border-radius: 30px;
+}
+
+.right ul li a {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+.right ul li a:hover {
+  color: black;
+}
+
+.left img {
+  /* width: fit-content; */
+  width: 10rem;
+
+  /* height: fit-content; */
+
+  /* align-self: center; */
+}
+
+.right button {
+  border-radius: 10px;
+}
+
+.main {
+  background-image: linear-gradient(rgba(0, 47, 135, 0.7), rgba(0, 47, 135, 0.2)), url(https://aircharterservice-globalcontent-live.cphostaccess.com/images/carousel-images/air-charter-service-private-charter_tcm61-37104_tcm36-37104.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+
+  /* background-size: cover; */
+
+  /* width: fit-content */
+
+  /* transform: scaleX(2); */
+  opacity: 0.9;
+  display: flex;
+
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+
+.scripts {
+  align-self: center;
+  width: 250px;
+}
+
+footer {
+  background-color: #002f87;
+  color: white;
+}
+
+.footer {
+  justify-content: space-around;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footerbottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+[class="right hr "] {
+  display: inline;
+}
